@@ -1,5 +1,5 @@
 <p align="center" style="color: #343a40">
-  <a href="gessy92.devianart.com">
+  <a href="https://www.deviantart.com/gessy92">
     <img src="https://cdn.jsdelivr.net/gh/jpbow/cronk@master/kronk.png" alt="Kronk" height="283" width="200">
   </a>
   <h1 align="center">cronk</h1>
