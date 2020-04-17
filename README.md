@@ -1,8 +1,7 @@
 # Cronk
 
-> CSS-in-JS for [Crank.js](https://github.com/bikeshaving/crank)
-
-Standing on the shoulders of [giants](https://emotion.sh), cronk is a performant and flexible CSS-in-JS library.
+Standing on the shoulders of [giants](https://emotion.sh), cronk is a performant and flexible CSS-in-JS library, built
+for [Crank.js](https://github.com/bikeshaving/crank).
 
 ## Quick Start
 
