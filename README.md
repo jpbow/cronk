@@ -1,4 +1,7 @@
-# Cronk
+<p align="center" style="color: #343a40">
+  <img src="https://cdn.rawgit.com/jpbow/cronk/master/kronk.png" alt="Kronk" height="150" width="150">
+  <h1 align="center">cronk</h1>
+</p>
 
 Standing on the shoulders of [giants](https://emotion.sh), cronk is a performant and flexible CSS-in-JS library, built
 for [Crank.js](https://github.com/bikeshaving/crank).
