@@ -1,6 +1,6 @@
 {
   "name": "cronk",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "repository": "git@github.com:jpbow/cronk.git",
   "author": "Jamie Bowley <oss@stoked.dev>",
   "license": "MIT",

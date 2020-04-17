@@ -2,10 +2,10 @@
   <a href="https://www.deviantart.com/gessy92">
     <img src="https://cdn.jsdelivr.net/gh/jpbow/cronk@master/kronk.png" alt="Kronk" height="283" width="200">
   </a>
-  <h1 align="center">cronk</h1>
+  <h1 align="center">Cronk</h1>
 </p>
 
-Standing on the shoulders of [giants](https://emotion.sh), cronk is a performant and flexible CSS-in-JS library, built
+Standing on the shoulders of [giants](https://emotion.sh), Cronk is a performant and flexible CSS-in-JS library built
 for [Crank.js](https://github.com/bikeshaving/crank).
 
 ## Quick Start
@@ -47,21 +47,22 @@ Equivalent to the `css` [function from Emotion](https://emotion.sh/docs/emotion#
 The `css` function accepts styles as a template literal, object, or array of objects and returns a class name.
 It is the foundation of cronk.
 
+See the example [CodeSandbox](https://codesandbox.io/s/cronk-generate-class-names-crankjs-oxj3n).
+
 ```jsx
 import { css } from "cronk";
 
-const color = "darkgreen";
+const color = "blue";
+const styles = css`
+  background-color: lightblue;
+  &:hover {
+    background-color: ${color};
+  }
+`;
 
 render(
-  <div
-    className={css`
-      background-color: hotpink;
-      &:hover {
-        color: ${color};
-      }
-    `}
-  >
-    This has a hotpink background.
+  <div class={styles}>
+    This has a blue background.
   </div>
 );
 ```
@@ -71,6 +72,8 @@ render(
 Equivalent to the `injectGlobal` [function from Emotion](https://emotion.sh/docs/emotion#global-styles).
 
 `injectGlobal` injects styles into the global scope and is useful for applications such as css resets or font faces.
+
+See the example [CodeSandbox](https://codesandbox.io/s/cronk-global-styles-crankjs-wbsug).
 
 ```jsx
 import { injectGlobal } from "cronk";
@@ -90,6 +93,8 @@ injectGlobal`
 Equivalent to the `keyframes` [function from Emotion](https://emotion.sh/docs/emotion#animation-keyframes).
 
 `keyframes` generates a unique animation name that can be used to animate elements with CSS animations.
+
+See the example [CodeSandbox](https://codesandbox.io/s/cronk-animation-keyframes-crankjs-u02vl).
 
 ```jsx
 import { css, keyframes } from "cronk";
@@ -136,6 +141,8 @@ The key advantage of cx is that it detects cronk generated class names ensuring 
 overwritten in the correct order. Generated styles are applied from left to right.
 Subsequent styles overwrite property values of previous styles.
 
+See the [example CodeSandbox](https://codesandbox.io/s/cronk-cx-crankjs-txe95).
+
 ```jsx
 import { css, cx } from "cronk";
 
@@ -156,6 +163,8 @@ render(<div class={cx(cls1, cls2)}>Content</div>);
 Create components with styles attached to them. Inspired by [styled-components](https://styled-components.com/).
 
 Allows styling of any HTML element, as defined in the tags file.
+
+See the example [CodeSandbox](https://codesandbox.io/s/cronk-styled-components-crankjs-m03pv).
 
 ```jsx
 import styled from "cronk";
