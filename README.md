@@ -1,5 +1,5 @@
 <p align="center" style="color: #343a40">
-  <img src="https://cdn.rawgit.com/jpbow/cronk/master/kronk.png" alt="Kronk" height="150" width="150">
+  <img src="https://cdn.jsdelivr.net/gh/jpbow/cronk@master/kronk.jpg" alt="Kronk" height="129" width="150">
   <h1 align="center">cronk</h1>
 </p>
 
