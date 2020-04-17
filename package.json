@@ -1,0 +1,39 @@
+{
+  "name": "cronk",
+  "version": "0.1.0",
+  "repository": "git@github.com:jpbow/cronk.git",
+  "author": "Jamie Bowley <oss@stoked.dev>",
+  "license": "MIT",
+  "main": "build/index.js",
+  "module": "build/index.es.js",
+  "jsnext:main": "build/index.es.js",
+  "scripts": {
+    "build": "rollup -c",
+    "test": "jest --coverage"
+  },
+  "files": [
+    "build"
+  ],
+  "devDependencies": {
+    "@types/jest": "25.2.1",
+    "jest": "25.3.0",
+    "prettier": "2.0.4",
+    "rollup": "2.6.1",
+    "rollup-plugin-commonjs": "10.1.0",
+    "rollup-plugin-node-resolve": "5.2.0",
+    "rollup-plugin-peer-deps-external": "2.2.2",
+    "rollup-plugin-typescript2": "0.27.0",
+    "ts-jest": "25.4.0",
+    "typescript": "3.8.3"
+  },
+  "dependencies": {
+    "emotion": "10.0.27"
+  },
+  "peerDependencies": {
+    "@bikeshaving/crank": "^0.1.0"
+  },
+  "jest": {
+    "preset": "ts-jest",
+    "testEnvironment": "node"
+  }
+}
