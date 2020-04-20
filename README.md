@@ -1,6 +1,6 @@
 <p align="center" style="color: #343a40">
   <a href="https://www.deviantart.com/gessy92">
-    <img src="https://cdn.jsdelivr.net/gh/jpbow/cronk@master/kronk.png" alt="Kronk" height="283" width="200">
+    <img src="https://cdn.jsdelivr.net/gh/jpbow/cronk@master/cronk.png" alt="Mascot" height="283" width="200">
   </a>
   <h1 align="center">Cronk</h1>
 </p>
