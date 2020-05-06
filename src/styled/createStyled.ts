@@ -4,7 +4,7 @@ import { css, cx } from "emotion";
 
 export type CreateElement = <T>(
   styles: TemplateStringsArray
-) => (props: { class?: string, children?: string } & Omit<Partial<T>, "children">) => Element;
+) => (props: { class?: string, children?: string | Element } & Omit<Partial<T>, "children">) => Element;
 
 export type CreateStyled = (tag: Tag) => CreateElement;
 
