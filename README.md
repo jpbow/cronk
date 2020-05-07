@@ -202,6 +202,48 @@ function Wrapper() {
 render(<Wrapper />);
 ```
 
+#### Changing based on props
+
+Any props set on the component are passed to `styled` and can be used to manipulate the styles.
+
+```jsx
+import styled, { css } from "cronk";
+
+const Button = styled.button(props => css`
+  display: inline-block;
+  border-radius: 3px;
+  padding: 0.5rem 0;
+  margin: 0.5rem 1rem;
+  width: 11rem;
+  background: transparent;
+  color: dodgerblue;
+  border: 2px solid dodgerblue;
+  text-align: center;
+  font-weight: ${props.bold ? "bolder" : "normal"}
+
+  &:hover {
+    background: aquamarine;
+  }
+`);
+
+const Container = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
+
+function Wrapper() {
+  return (
+    <Container>
+      <Button bold>Click me!</Button>
+    </Container>
+  );
+}
+
+render(<Wrapper />);
+```
+
+
 ## Examples
 
 - **open a PR and add yours!**

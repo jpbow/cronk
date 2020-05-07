@@ -8,15 +8,18 @@ export type CreateElementProps = {
 };
 
 export type CreateElement = <T>(
-  styles: TemplateStringsArray
+  options: TemplateStringsArray | ((props: T) => string)
 ) => (props: CreateElementProps & Omit<Partial<T>, "children">) => Element;
 
 export type CreateStyled = (tag: Tag) => CreateElement;
 
-const createStyled: CreateStyled = (tag) => (styles) => {
-  const elementCss = css(styles);
-
+const createStyled: CreateStyled = (tag) => (options) => {
   return function ({ children, ...props }) {
+    const isFunction = typeof options === "function";
+    // @ts-ignore
+    const styles = isFunction ? options(props) : options;
+    const elementCss = css(styles);
+
     return createElement(
       tag,
       { ...props, class: cx(elementCss, props.class) },
